@@ -37,4 +37,7 @@ data "template_file" "deploy_sh" {
     HOSTNAME    = "${var.metadata["appname"]}-${var.env}-ec2-${var.metadata["appversion"]}"
   }
 }
+data "aws_route53_zone" "current" {
+  name = "limalymon.click"
+}
 

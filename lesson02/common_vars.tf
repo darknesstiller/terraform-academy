@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "us-east-2"
+  default = "us-west-2"
 }
 
 variable "metadata" {
@@ -15,7 +15,7 @@ variable "env" {
 }
 
 variable "domain" {
-  default     = "terraform-workshop.com.mx"
+  default     = "limalymon.click"
   description = "The domain name to use"
   type        = string
 }
