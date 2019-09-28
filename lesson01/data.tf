@@ -33,6 +33,6 @@ data "aws_caller_identity" "current" {}
 
 # Uncomment if you have a hosted zone on your AWS account
 # Gets hosted zone ID
-# data "aws_route53_zone" "current" {
-#   name = var.domain
-# }
+data "aws_route53_zone" "current" {
+  name = var.domain
+}

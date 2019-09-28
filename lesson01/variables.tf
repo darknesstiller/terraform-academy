@@ -6,7 +6,6 @@ variable "tags" {
     Owner      = "Wizeline"
     Maintainer = "sre@wizeline.com"
   }
-
   description = "Tags to set in the resources"
   type        = map(string)
 }
@@ -24,15 +23,15 @@ variable "app_version" {
 }
 
 variable "instance_key" {
-  default     = "academy-test-lesson-01"
+  default     = "terraform-wizeline"
   description = "AWS key created to access the instance via ssh"
   type        = string
 }
 
 # Only uncomment if you have a hosted zone in Route53 and a domain
 # Change the default value to your domain if you have one
-# variable "domain" {
-#   default     = "mydomain.com"
-#   description = "The domain name to use"
-#   type        = string
-# }
+variable "domain" {
+  default     = "limalymon.click"
+  description = "The domain name to use"
+  type        = string
+}
